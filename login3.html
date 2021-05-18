@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>
+            login3
+        </title>
+        <script src="js/jquery-2.2.3.min.js" type="text/javascript"></script>
+        <script src="js/jquery-ui.min.js" type="text/javascript"></script>
+        <link type="text/css" href="css/jquery-ui.min.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+		<link type="text/css" href="css/login3.css" rel="stylesheet">
+        <script src="js/login3.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <img src="img/login_bg.jpg" class="bg">
+        <div id="head">
+            <img src="img/login_head.png" width="100%" height="auto">
+        </div>
+        <div id="center">
+            <form name="myform" onsubmit="return validateform()" enctype="multipart/form-data" action="cgi-bin/login2.cgi" method="post" id="myform">
+                <div class="input-group">
+                    <span id="span_username">用户名：</span>
+					<input class="form-control" id="username" name="username" type="text" value="" placeholder="只能输入字母或数字，4-16个字符" autocomplete="off">
+                </div>
+                <div class="input-group">
+                    <span id="span_password">密码：</span>
+					<input class="form-control" id="password" name="password" type="password" value="" placeholder="密码长度6-12位" autocomplete="off"> 
+					<span class="input-group-btn">
+						<img src="img/eye_open.svg" id="passwordeye" alt="显/隐" onclick="show_hide_pwd('password')"/>
+					</span>
+                </div>
+                <div id="btn_div">
+                    <input class="btn btn-primary" name="loginButton" type="submit" id="login" value="登录"> 
+					<a href="register3.html">
+						<input class="btn btn-primary" name="registerButton" id="register" type="button" value="注册">
+					</a>
+                </div>
+            </form>
+        </div>
+        <div id="bottom">
+            <div class="footer" style="color:white;">
+                Copyright © 2013-2019 All Rights Reserved. 备案号：
+            </div>
+        </div>
+    </body>
+</html>
